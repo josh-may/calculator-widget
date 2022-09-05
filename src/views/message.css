@@ -37,11 +37,10 @@ body {
 
 .calculator-grid {
   display: grid;
-  border: 1px solid black;
   justify-content: center;
   align-content: center;
   min-height: 1vh;
-  max-width: 49.4vh;
+  max-width: 51.3vh;
   /* width: 28.2%; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
