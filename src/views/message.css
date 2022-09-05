@@ -1,4 +1,4 @@
-.js-widget-overlay {
+/* .js-widget-overlay {
   z-index: 10001;
   position: fixed;
   top: 0px;
@@ -7,7 +7,8 @@
   right: 0px;
   opacity: 0.8;
   background-color: #000;
-}
+} */
+/* 
 .js-widget-dialog {
   position: fixed;
   z-index: 10002;
@@ -18,13 +19,33 @@
   width: 200px;
   padding: 10px 20px;
   border: solid 1px #333;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
 }
 
 .calculator-grid {
   display: grid;
+  border: 1px solid black;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 1vh;
+  max-width: 49.4vh;
+  /* width: 28.2%; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
